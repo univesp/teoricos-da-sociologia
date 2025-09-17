@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Lexend+Deca:wght@900&family=Open+Sans:wght@600&family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Lexend+Deca:wght@900&family=Open+Sans:wght@600&family=Quattrocento+Sans:wght@400;700&family=Roboto:ital,wght@1,100&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Poller+One&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.correto{
+    border: 5px solid #4CAF50!important;
+}
+
+/* Nova Seção 1 */
+.container-capa-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #8aa183;
+}
+
+.fundo-tela-1-2 {
+    background-image: url(../assets/Fundo_tela01.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.titulo-2-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #8d1a1b;
+}
+
+#titulo-2-2 {
+    opacity: 1;
+    z-index: 200;
+}
+
+.titulo-inicial-2 {
+    font-family: 'Poller One', serif;
+    text-align: center;
+    line-height: 70px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #f8f9fa;
+    transform: skew(-20deg);
+    text-shadow: 3px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.iniciar-button-2 {
+    display: block;
+    font-size: 18px;
+    margin: 40px auto;
+    padding: 11px 28px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #bf0405;
+    border: 1.5px solid #000;
+    border-radius: .5em;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Fim nova Seção 1 */
+
+
+#tela-2,
+#tela-3,
+.question,
+.result-container,
+.continuar-button,
+.result-button,
+.box-resultado {
+    display: none;
+}
+.opaco{
+    opacity: 0.5;
+}
+
+.marcado{
+    opacity: 1!important;
+}
+
+#conjunto-engrena {
+    z-index: 95;
+    background-color: #753c25;
+}
+
+.texto-destaque {
+    font-family: 'Poller One', serif;
+    color: #ce6b44;
+    font-size: 20px;
+}
+
+.continuar-button {
+    position: relative;
+    font-size: 18px;
+    margin: 40px auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #faf5ed;
+    color: #bf0405;
+    border-radius: 0.5em;
+    cursor: pointer;
+    z-index: 200;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.conjunto-engrena {
+    position: absolute;
+    top: 211px;
+    left: 79px;
+    width: 93px;
+    height: 700px;
+    filter: brightness(45%);
+    opacity: .7;
+}
+
+.conjunto-engrena-2 {
+    position: absolute;
+    top: -97px;
+    right: -34px;
+    width: 87px;
+    height: 703px;
+    transform: scaleX(-1);
+    background-color: #fff;
+}
+
+.conjunto-engrena-3 {
+    position: absolute;
+    left: 0px;
+    width: 93px;
+    height: 700px;
+    background-color: #fff;
+}
+
+.engrenagem-1 {
+    position: relative;
+    width: 183px;
+    height: 185px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/fig_engrena01.svg);
+    animation: rotate-1 15s linear infinite;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.engrenagem-2 {
+    position: relative;
+    top: -20px;
+    right: -84px;
+    width: 94px;
+    height: 93px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/fig_engrena02.svg);
+    animation: rotate 9.5s linear infinite;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.engrenagem-3 {
+    position: relative;
+    top: -70px;
+    left: -100px;
+    width: 258px;
+    height: 256px;
+    background-repeat: no-repeat;
+    background-image: url(../assets/fig_engrena01.svg);
+    animation: rotate-1 15s linear infinite;
+    background-size: 260px;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.fundo-tela-2 {
+    background-image: url(../assets/Fundo_tela02.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 555px;
+    margin-top: -326px;
+    margin-bottom: -32px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-texto-inicial {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #8aa183;
+}
+
+.container-questoes {
+    position: relative;
+    width: 100%;
+    min-height: 612px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #53654d;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-inicial {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #faf5ed;
+    border-radius: 1em;
+    color: #2e1b16;
+    margin-top: 2em;
+    font-size: 18px;
+    width: 65%;
+    padding: 2em;
+    border: 1.5px solid #000;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.texto-inicial-container {
+    display: flex;
+    justify-content: center;
+}
+
+.texto-perguntas {
+    font-family: 'Quattrocento Sans', sans-serif;
+    min-width: 610px;
+    min-height: 185px;
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+    height: 153px;
+    background-color: #faf5ed;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    border: 1.5px solid #000;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+    padding: 1.5em;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    line-height: 1.15;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.options {
+    margin: auto;
+}
+
+.options button {
+    position: relative;
+    color: transparent;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.figuras{
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.figuras:focus{
+    outline: none!important;
+}
+
+.figura-Durkheim {
+    background-image: url(../assets/Durkheim2.png);
+    background-repeat: no-repeat;
+
+}
+
+.figura-Weber {
+    background-image: url(../assets/Weber2.png);
+    background-repeat: no-repeat;
+    position: static;
+}
+
+.figura-Marx {
+    background-image: url(../assets/Marx2.png);
+    background-repeat: no-repeat;
+}
+
+.correct {
+    background-color: #8aff8a;
+    border: 6px solid #8aff8a;
+}
+
+.question-position {
+    display: block;
+}
+
+.box-alternativas {
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    justify-content: center;
+    z-index: 96;
+}
+
+.option {
+    display: flex;
+    color: #000;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.module content {
+    background-color: #8aa183;
+}
+
+.continue-button {
+    display: block;
+    font-size: 18px;
+    margin: 40px auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #bf0405;
+    border: 1.5px solid #000;
+    border-radius: .5em;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.restart-button {
+    display: block;
+    font-size: 18px;
+    margin: 1em;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #bf0405;
+    border: 1.5px solid #000;
+    border-radius: .5em;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.result-button {
+    font-size: 18px;
+    margin-bottom: auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border: 4px solid #bf0405;
+    border-radius: .5em;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.gerar-resumo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #bf0405;
+    border: 1.5px solid #000;
+    border-radius: .5em;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.result-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px !important;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.box-resultado {
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    border: 1.5px solid #000;
+    background-color: #faf5ed;
+    padding: 40px 10px;
+    z-index: 200;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.feedback-text {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+}
+
+.texto-resultado {
+    font-family: 'Poller One', serif;
+    color: #8ba283;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    padding-bottom: .5em;
+}
+
+.feedback-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+.progress-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.fa-circle:before {
+    content: "\f111";
+    color: #84a385;
+    margin: .3em;
+}
+
+@media (max-width: 2000px) {
+    .fundo-tela-1-2 {
+        background-size: 100% 110%;
+    }
+}
+
+@media (max-width: 1800px) {
+    .fundo-tela-1-2 {
+        background-size: 100% 116%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .fundo-tela-1-2 {
+        background-size: 100% 110%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .fundo-tela-1-2 {
+        background-size: 100% 110%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .fundo-tela-1-2 {
+        background-size: 100% 110%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .conjunto-engrena {
+        display: none;
+    }
+
+    .conjunto-engrena-2, .conjunto-engrena-3 {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 992px) {
+    .box-resultado {
+        width: 80%;
+    }
+
+    .texto-inicial {
+        width: 80%;
+    }
+
+    .texto-perguntas{
+        width: 80%;
+    }
+
+    .fundo-tela-1-2 {
+        background-size: 100% 100%;
+        height: 63vh;
+    }
+
+    .titulo-inicial-2 {
+        line-height: 0px;
+        font-size: 2.2rem;
+    }
+
+    #caixa-1{
+        background-color: #9c0207;
+    }
+}
+
+@media (max-width: 768px) {
+    .conjunto-engrena, .conjunto-engrena-2, .conjunto-engrena-3 {
+        display: none;
+    }
+
+    .question {
+        width: 100%;
+    }
+
+    .texto-perguntas {
+        height: 260px !important;
+        min-width: 0 !important;
+    }
+
+    .quiz-container {
+        width: 100% !important;
+    }
+
+    .box-alternativas {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .option {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    #figura-Durkheim, #figura-Weber, #figura-Marx {
+        background-size: contain !important;
+    }
+
+    .feedback-text {
+        font-size: 14px !important;
+    }
+
+    .continue-button {
+        margin: 10px auto !important;
+    }
+
+    .texto-resultado {
+        font-size: 20px !important;
+        line-height: 27px !important;
+    }
+
+    .box-resultado {
+        width: 80% !important;
+    }
+
+    .texto-inicial {
+        width: 80%;
+    }
+
+    .texto-perguntas{
+        width: 80%;
+    }
+
+    .fundo-tela-1-2{
+        height: auto;
+    }
+
+    .titulo-inicial-2{
+        line-height: initial;
+    }
+
+    #caixa-1{
+        background-color: transparent;
+    }
+
+    .fundo-tela-1-2 {
+        background-image: none;
+        background-repeat: no-repeat;
+    }
+
+    #caixa-1 {
+        height: 513px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .fundo-tela-1-2 {
+        background-image: url(../assets/capa_mobile.svg);
+        background-size: 120%;
+        background-position: 50%;
+        background-color: #83a284;
+        height: 570px;
+    }
+
+    main{
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width:576px) {
+    .texto-inicial {
+        width: 95%;
+    }
+    .texto-perguntas{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .options button {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+    .figuras{
+        background-size: cover;
+    }
+    .fa-circle:before {
+        margin: 0.25em;
+    }
+    /* .correto{
+        width: 105px!important;
+        height: 105px!important;
+    } */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes rotate-1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

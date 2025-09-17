@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="assets/fb-share.png">
+        <meta name="author" content="Univesp">
+        <meta name="description" property="og:description" content="">
+        <title>Univesp | Teóricos da Sociologia</title>
+        <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon" />
+
+        <!-- Arquivos Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+        <!-- Ícones por Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!-- Ícones por Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Tipografia institucional por Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+        <!-- Compartilhamento por jsSocials -->
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+        <link rel="stylesheet" href="stylesheets/nav_footer.css">
+
+        <!-- <PARTE DO PROGRAMADOR> -->
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/styles.css" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+
+    <body class="d-flex flex-column">
+
+        <nav>
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+                    <a href="https://univesp.br/" target="_blank">
+                        <img src="https://apps.univesp.br/common/traco-negativa.svg"
+                            alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+                        <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+                    </a>
+                </div>
+                <!-- Compartilhamento -->
+                <ul class="nav justify-content-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="sharing"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="mainInicio">
+            <section class="module content" id="tela-1">
+                <div class="container-capa-2">
+                    <div class="fundo-tela-1-2">
+                        <div id="caixa-1">
+                            <p class="titulo-inicial-2">teóricos da sociologia</p>
+                            <button class="iniciar-button-2" id="iniciar-button-2">iniciar jogo</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="module content" id="tela-2">
+                <div class="container-texto-inicial">
+                    <div class="texto-inicial-container">
+                        <p class="texto-inicial">
+                            <span class="texto-destaque">Você conhece as ideias, as obras e os objetos de estudo dos principais teóricos da Sociologia?</span>
+                            <br>
+                            <br>
+                            Neste jogo, você deve analisar cada afirmação apresentada e selecionar a qual teórico ela
+                            corresponde. São <strong>15 afirmações</strong> e <strong>3 teóricos</strong>. Ao final, confira quantas você acertou!
+                        </p>
+
+                    </div>
+
+                    <button class="continuar-button" id="continuar-button">Vamos lá?</button>
+
+                    <div class="fundo-tela-2"></div>
+                </div>
+            </section>
+
+            <section class="module content" id="tela-3">
+                <div class="container-questoes">
+                    <section class="conjunto-engrena" id="conjunto-engrena">
+                        <div class="engrenagem-1" id="engrenagem-1"></div>
+                        <div class="engrenagem-2" id="engrenagem-2"></div>
+                        <div class="engrenagem-3" id="engrenagem-3"></div>
+                    </section>
+
+                    <section class="conjunto-engrena-2" id="conjunto-engrena">
+                        <div class="engrenagem-1" id="engrenagem-1"></div>
+                        <div class="engrenagem-2" id="engrenagem-2"></div>
+                        <div class="engrenagem-3" id="engrenagem-3"></div>
+                    </section>
+
+                    <section class="conjunto-engrena-3" id="conjunto-engrena">
+                        <div class="engrenagem-1" id="engrenagem-1"></div>
+                        <div class="engrenagem-2" id="engrenagem-2"></div>
+                        <div class="engrenagem-3" id="engrenagem-3"></div>
+                    </section>
+
+                    <div class="quiz-container">
+                        <div class="question" id="question1">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Fundador da disciplina <strong>“Sociologia”</strong> e primeiro professor universitário dessa disciplina.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question2">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Defende a tese de que a história de todas as sociedades que existiram até nossos dias tem sido a história da luta de classes.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question3">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Preocupa-se em compreender como as <strong>“ideias”</strong> cobram força na explicação sociológica.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question4">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Define a Sociologia como uma ciência que pretende compreender interpretativamente a ação social e assim explicá-la causalmente em seu curso e em seus efeitos.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question5">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Faz uma análise dialética da História: Tese <i>versus</i> Antítese ➢ Síntese (Teoria do Conflito).</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question6">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Define a Sociologia como: a ciência das instituições, da sua gênese e do seu funcionamento, ou seja, de toda crença, todo comportamento instituído pela coletividade.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question7">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Autor da obra <strong>“O Capital”</strong>.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question8">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Utiliza o Método Positivo, inspirado nas ciências naturais (observação, indução e experimentação).</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question9">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Suas principais obras são: <strong>“Economia e Sociedade”</strong>; <strong>“A Ética Protestante e o Espírito do Capitalismo”</strong>.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question10">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Define <strong>“Relação Social”</strong> como uma conduta plural (de vários), reciprocamente orientada, dotadas de conteúdo significativo que descansam na possibilidade de que se agirá socialmente de um certo modo.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question11">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Suas principais obras são: <strong>“Da Divisão do Trabalho Social”</strong> e <strong>“Suicídio”</strong>.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question12">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Traz os conceitos de <strong>“alienação”</strong> e de <strong>“mais-valia”</strong>.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question13">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Os <strong>“fatos sociais”</strong> são seu objeto de estudo.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question14">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Entende que a epidemia da superprodução leva a crises recorrentes.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                        <div class="question" id="question15">
+                            <p class="texto-perguntas">
+                                <span>
+                                    <span>Traz os conceitos de <strong>“Desencantamento do Mundo”</strong>, <strong>“Racionalização”</strong> e <strong>“Burocracia”</strong>.</span>
+                                </span>
+                            </p>
+                        <div class="options">
+                            <button class="figura-Durkheim figuras" onclick="checkAnswer(this)">1</button>
+                            <button class="figura-Weber figuras" onclick="checkAnswer(this)">2</button>
+                            <button class="figura-Marx figuras" onclick="checkAnswer(this)">3</button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <button class="continue-button" id="confirmButton" onclick="nextQuestion()">Continuar</button>
+
+                    <div class="box-resultado">
+
+                        <div class="result-container" id="resultContainer">
+                            <div class="texto-resultado">
+
+                                <p id="resultText"></p>
+                                <p id="totalScore"></p>
+
+                            </div>
+
+                            <div class="feedback-container">
+                                <p class="feedback-text"></p>
+                            </div>
+
+
+                            <!-- <p>Incorretas: <span id="incorrect-count">0</span></p> -->
+                        </div>
+
+                        <!-- <button class="result-button" onclick="showResult()">Ver Resultado</button> -->
+                        <button class="restart-button" onclick="restartQuiz()">Refazer o Teste</button>
+
+
+                        <button class="gerar-resumo" id="gerar-resumo">gerar resumo</button>
+
+                    </div>
+
+                    <div class="quiz-container">
+                        <p class="question-position"></p> <!-- Mostra a posição da questão -->
+                        <!-- Resto do código do questionário -->
+                    </div>
+                    <div class="progress-icon">
+                        <span class="filled"></span>
+                        <span class="empty"></span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <div class="container d-flex justify-content-between">
+
+                <div class="cred-rea">
+                    <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/"
+                            target="blank">Univesp</a>, disponível sob licença <a
+                            href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+                        Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+                    <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+                    <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i
+                                class="fab fa-github"></i></a></div>
+                    <div>Compartilhe: <div class="sharing"></div>
+                    </div>
+                </div>
+
+                <div class="aval-rea d-flex">
+                    <a class="btn btn-secondary" href="https://forms.office.com/r/SRXy7Evkzc" target="_blank">Avaliar este recurso</a>
+                    <a class="btn btn-secondary" href="https://forms.office.com/r/BU3heRJ9ZP" target="_blank">Reportar erro</a>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h6>Governo do Estado de São Paulo</h6>
+                        <p>Secretaria de Desenvolvimento Econômico</p>
+                        <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO - UNIVESP</h6>
+                        <p><span class="funcao">Presidente</span>Marcos Augusto Borges</p>
+                        <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+                        <h6>Equipe</h6>
+                        <p>
+                            <span class="funcao">Docente responsável</span>Tatiana Gomes Rotondaro
+                        </p>
+                        <p><span class="funcao">Coordenação</span>Wesley de Souza Lima</p>
+                        <p><span class="funcao">Roteirização e Design Instrucional</span>Nádia Pirillo </p>
+                        <p><span class="funcao">Ilustração</span>Celso Roberto Lourenço</p>
+                        <p><span class="funcao">Layout</span>Celso Roberto Lourenço</p>
+                        <p><span class="funcao">Programação</span>Celso Roberto Lourenço</p>
+                        <p><span class="funcao">Revisão</span>Nádia Pirillo</p>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Agosto/2023</p>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"  crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+        <script>
+            var share = $(".sharing");
+            var page_title = $(document).attr('title');
+            var page_url = window.location.href;
+            share.jsSocials({
+                shares: [
+                    {
+                        share: "facebook",
+                        logo: "fab fa-facebook-f",
+                    },
+                    {
+                        share: "twitter",
+                        logo: "fab fa-twitter",
+                    },
+                    {
+                        share: "whatsapp",
+                        logo: "fab fa-whatsapp",
+                    },
+                ],
+                url: page_url,
+                text: 'Confira o REA ' + page_title + '.',
+                showLabel: false,
+                showCount: false,
+                shareIn: "popup",
+            });
+        </script>
+        <script type="text/javascript" src="javascripts/events.js"></script>
+        <script type="text/javascript" src="javascripts/navegacao.js"></script>
+        <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+body {
+  background-color: #84a384;
+}
+
+nav .logo img {
+  background-color:#48255c ;
+}
+
+nav .nav-link {
+  color: #fff;
+  background-color: #48255c;
+  transition: .2s all;
+}
+
+main {
+  padding-bottom: 0rem!important;
+}
+
+
